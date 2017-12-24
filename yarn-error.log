@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/0.27.5_1/libexec/bin/yarn.js install
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/Users/melvin/.rvm/gems/ruby-2.3.1/bin:/Users/melvin/.rvm/gems/ruby-2.3.1@global/bin:/Users/melvin/.rvm/rubies/ruby-2.3.1/bin:/opt/local/bin:/opt/local/sbin:/Users/melvin/anaconda/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin:/Users/melvin/bin:/Users/melvin/.rvm/bin:/Users/melvin/mongodb/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  7.6.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "react-spotify",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "body-parser": "~1.18.2",
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "express": "~4.15.5",
+      "jade": "~1.11.0",
+      "morgan": "~1.9.0",
+      "serve-favicon": "~2.4.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:28:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
