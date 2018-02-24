@@ -1,6 +1,12 @@
 /* ROUTES: SPOTIFY AUTHENTICATION. */
 
 const auth = (router, passport) => {
+  router.get(
+    '/hello',
+    (req, res) => {
+      res.send('hello world!');
+    }
+  );
   /* Authenticate Spotify with Passport. */
   router.get(
     '/spotify',
