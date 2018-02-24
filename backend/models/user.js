@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
   username: String,
+  spotifyID: String,
   name: String,
   url: String,
   token: String,

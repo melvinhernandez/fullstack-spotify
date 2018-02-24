@@ -9,20 +9,6 @@ if (typeof btoa === 'undefined') {
   global.btoa = str => Buffer.from(str).toString('base64');
 }
 
-/* Gets all playlists given a user. */
-// const getMyPlaylists = user => new Promise((resolve, reject) => {
-//   request
-//     .get('http://api.spotify.com/v1/me/playlists')
-//     .set('Authorization', `Bearer ${user.token}`)
-//     .query('limit=50')
-//     .then(
-//       playlists => resolve(playlists.data),
-//       error => reject(error),
-//     )
-//     .catch(error => reject(error));
-// });
-
-
 /* Updates token for the given user. */
 const updateToken = user => new Promise((resolve, reject) => {
   if (Date.now() > user.expires.getTime()) {

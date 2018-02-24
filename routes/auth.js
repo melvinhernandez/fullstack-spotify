@@ -4,7 +4,7 @@ const auth = (router, passport) => {
   /* Authenticate Spotify with Passport. */
   router.get(
     '/spotify',
-    passport.authenticate('spotify'),
+    passport.authenticate('spotify', { scope: ['playlist-modify-public'] }),
     () => {
       /* This function is not called. */
     }
@@ -29,7 +29,7 @@ const auth = (router, passport) => {
 
   /* Get current user. */
   router.get('/user', (req, res) => {
-    if (req.user) {
+    if (req.isAuthenticated()) {
       res.json(req.user);
     } else {
       res.json(null);

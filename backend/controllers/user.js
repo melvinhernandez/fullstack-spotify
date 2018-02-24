@@ -7,7 +7,8 @@ const createUser = (profile, accessToken, refreshToken) => {
   const newUser = new User({
     username: profile.username,
     name: profile.displayName,
-    url: profile.profileUrl
+    url: profile.profileUrl,
+    spotifyID: profile.id
   });
   newUser.token = accessToken;
   newUser.refreshToken = refreshToken;

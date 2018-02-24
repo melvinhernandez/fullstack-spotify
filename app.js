@@ -43,6 +43,11 @@ const auth = express.Router();
 authRoutes(auth, passport);
 app.use('/auth', auth);
 
+const spotify = express.Router();
+spotifyRoutes(spotify);
+app.use('/spotify', spotify);
+
+
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   const err = new Error('Not Found');

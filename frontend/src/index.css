@@ -2,4 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #3a6186;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  box-sizing: border-box;
+}
+
+.login-segment {
+  padding: 2em;
+}
+
+.app-overview {
+  margin: 4em auto;
+}
+
+.app-overview > h3 {
+  font-weight: 100;
+}
+
+.input-container {
+  padding: 2em;
+}
+
+.selected-container {
+  padding: 2em;
+}
+
+.generate-btn {
+  padding: 2em;
 }
